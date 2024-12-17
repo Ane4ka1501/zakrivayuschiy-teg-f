@@ -113,7 +113,7 @@
 .card__title {
   font-size: 18px;
   margin: 5px 8px;
-  font-variation-settings: 'wght' var(--weight-title);
+  font-variation-settings: "wght" var(--weight-title);
 }
 
 .watermark {
@@ -171,7 +171,7 @@
   display: flex;
   gap: 27px;
   flex-direction: column;
-  font-variation-settings: 'wght' var(--weight-card);
+  font-variation-settings: "wght" var(--weight-card);
 }
 
 .card__footer {
@@ -226,7 +226,7 @@
 
 .main-body {
   fill: transparent;
-  transition: fill 0.3s  linear;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:focus-visible {
@@ -377,7 +377,7 @@
   }
 
   .header__theme-menu {
-   margin-inline-start: 6px;
+    margin-inline-start: 6px;
   }
 
   .card__title {
@@ -433,5 +433,5 @@
 }
 
 .img__mix {
- filter:  contrast(0.6) saturate(1) hue-rotate(91deg) blur(1px);
+  filter: contrast(0.6) saturate(1) hue-rotate(91deg) blur(1px);
 }

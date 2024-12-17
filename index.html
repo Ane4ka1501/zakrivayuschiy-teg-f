@@ -580,19 +580,23 @@
       >
         <div class="dialog_content">
           <svg
-          class="floopy_dialog"
-          width="39"
-          height="39"
-          viewBox="0 0 39 39"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <use fill="currentColor" href="./svg/floppy.svg#floppy-disk" />
-        </svg>
+            class="floopy_dialog"
+            width="39"
+            height="39"
+            viewBox="0 0 39 39"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <use fill="currentColor" href="./svg/floppy.svg#floppy-disk" />
+          </svg>
           <h3 class="dialog__title">Вставьте дискету, чтобы продолжить</h3>
         </div>
         <form class="dialog_form">
-          <button type="button" class="dialog_button button" onclick="window['dialog-id'].close();">
+          <button
+            type="button"
+            class="dialog_button button"
+            onclick="window['dialog-id'].close();"
+          >
             <span class="button__text">ок</span>
           </button>
         </form>
