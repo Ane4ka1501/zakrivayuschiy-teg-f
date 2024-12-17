@@ -113,6 +113,7 @@
 .card__title {
   font-size: 18px;
   margin: 5px 8px;
+  font-variation-settings: 'wght' var(--weight-title);
 }
 
 .watermark {
@@ -170,6 +171,7 @@
   display: flex;
   gap: 27px;
   flex-direction: column;
+  font-variation-settings: 'wght' var(--weight-card);
 }
 
 .card__footer {
