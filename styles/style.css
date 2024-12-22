@@ -104,9 +104,9 @@
   content: "";
   position: absolute;
   display: block;
-  width: 100%; 
+  width: 100%;
   transform: scaleX(0);
-  background-color: currentColor; 
+  background-color: currentColor;
   transform-origin: left;
   transition: transform 0.3s ease;
   height: 2px;
@@ -115,8 +115,6 @@
 .theme-menu__button:focus-visible::after {
   transform: scaleX(1);
 }
-
-
 
 .card-list {
   display: flex;
@@ -167,8 +165,9 @@
     (-webkit-text-stroke: 1px var(--background-color))
 ) {
   .watermark {
-    text-shadow: 1px 0 0 var(--background-color), -1px 0 0 var(--background-color),
-      0 1px 0 var(--background-color), 0 -1px 0 var(--background-color);
+    text-shadow: 1px 0 0 var(--background-color),
+      -1px 0 0 var(--background-color), 0 1px 0 var(--background-color),
+      0 -1px 0 var(--background-color);
   }
 }
 
