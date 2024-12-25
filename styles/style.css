@@ -42,6 +42,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-block-end: 103px;
 }
 
 .header__logo {
@@ -113,7 +114,7 @@
 }
 
 .theme-menu__button:focus-visible::after {
-  transform: scaleX(1);
+  transform: scaleX(0.9);
 }
 
 .card-list {
@@ -160,10 +161,7 @@
   }
 }
 
-@supports not (
-  (text-stroke: 1px var(--background-color)) and
-    (-webkit-text-stroke: 1px var(--background-color))
-) {
+@supports (not (text-stroke: 1px var(--background-color))) and (not (-webkit-text-stroke: 1px var(--background-color))) {
   .watermark {
     text-shadow: 1px 0 0 var(--background-color),
       -1px 0 0 var(--background-color), 0 1px 0 var(--background-color),
@@ -261,8 +259,14 @@
   transition: fill 0.3s linear;
 }
 
+
 .like-icon:focus-visible {
   border-color: var(--accent-color);
+}
+
+.button_animation {
+  transition: box-shadow 0.5s ease-in-out;
+  outline: none;
 }
 
 .button_animation:focus-visible {
@@ -349,7 +353,7 @@
   width: 339px;
   height: 54px;
   gap: 8px;
-  margin-block: 50px;
+  margin-block-start: 50px;
 }
 
 .dialog {
@@ -359,6 +363,11 @@
   font-family: var(--accent-font);
   padding-inline: 29px;
   padding-block-start: 27px;
+}
+
+.dialog::backdrop {
+  background-color: black;
+  opacity: 0.75;
 }
 
 .dialog[open] {
@@ -416,16 +425,6 @@
   .card__content {
     margin-block-start: 29px;
     margin-inline-start: 27px;
-  }
-
-  .footer__button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 306px;
-    height: 84px;
-    padding-block-end: 10px;
-    gap: 4px;
   }
 
   .button_icon {

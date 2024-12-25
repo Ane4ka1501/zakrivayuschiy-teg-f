@@ -6,8 +6,8 @@
   --accent-color: #000;
   --button-text-color: #fff;
   --fill-color: #ff0000;
-  --weight-title: "wght" 700;
-  --weight-card: "wght" 400;
+  --weight-title: 700;
+  --weight-card: 400;
   --background-image: repeating-linear-gradient(
       #d3d3d3 0 2px,
       transparent 2px 4px
